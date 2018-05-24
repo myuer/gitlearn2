@@ -1,0 +1,57 @@
+git + hexo 个人技术博客搭建
+
+step1:新建空文件夹 进入此文件夹
+右键：git bash here
+执行 npm install -g hexo 等待5min
+ (bash: npm is not....) -->缺失node.js  http://nodejs.org/en/
+下载 node.js  lts版本
+
+step2:  新建一个hexo  文件夹
+	进入此文件夹
+
+右键：git bash here 
+执行 hexo init
+
+step3:  进入hexo文件夹
+	右键： git bash here
+	执行 npm install
+	-->>如果依赖环境有缺失，npm会进行检查，如果没有缺失，npm会自动跳过
+
+step4:	当前hexo 博客环境 已经搭建完成  
+	hexo 会提供一个默认的模板
+	生成静态博客文件
+	执行：hexo g  g=generate
+	执行：hexo s
+
+
+	显示：hexo is running at http://localhost:4000 press ctrl+c to stop
+	
+	当前博客运行在  localhost：4000  4000是端口号
+
+	浏览器的地址栏url:localhost：4000
+
+step5:	创建一篇新的blog
+	hexo new "文章标题"
+
+step6：	如何对文章内容进行修改
+	进入 hexo -- source -- _posts 文件夹
+	找到对应标题的 .md 文档
+	使用编辑器打开进行内容编辑
+
+step7： 查看生成内容
+	执行：hexo g
+	执行：hexo s
+	
+
+step8： 更改 hexo 主题
+	github 左上角 搜索框：hexo theme
+	！！请下载 带有hexo 标题的主题 eg.hexo-theme-apollo
+	
+	如何下载：
+	进入 theme 里面使用 git bash here
+	执行 git clone  粘贴的地址 --> github中Apollo主题的页面  右边  clone or download
+	回车完成下载
+	post_asset_folder：推送图片改为true
+
+
+
